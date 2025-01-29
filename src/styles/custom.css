@@ -1,0 +1,18 @@
+/**
+ * Wide Layout (Startligh layout overrides)
+ */
+
+/* make the sidebars smaller and use (almost) all available space */
+:root {
+    --sl-content-width: 90%;
+    --sl-sidebar-width: 15rem;
+}
+
+/* constrain markdown content width (but not for dd-components) */
+.sl-markdown-content > *:not([class^="dd-"]) {
+    max-width: 42rem;
+}
+/* do not constrain makdown content width on homepage */
+.hero + .sl-markdown-content > *:not([class^="dd-"]) {
+    max-width: none;
+}

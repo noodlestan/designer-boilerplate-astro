@@ -1,0 +1,81 @@
+---
+title: Color
+description: Color foundations of our visual language
+---
+
+import { LayoutFlex, ShowDecision } from "@noodlestan/designer-shows/astro";
+import { loader } from "../../../decisions/loader";
+
+export const store = await loader();
+
+## Color Palettes
+
+Our color palettes extend our core brand colors, providing a range of shades that maintain consistency and flexibility in design. These palettes are specifically tuned for different use cases while preserving the visual identity.
+
+### Pink and Blue Palettes
+
+The band color Palettes provide a broad range of tints and shades of our brand color. It is designed for use in icons and backgrounds but should not be used for typography.
+
+The shades follow a controlled progression, adjusting lightness and saturation channels in the [Oklch color space](https://oklch.com/#61.92,0.1717,358.75,100) to maintain balance across the palette.
+
+<LayoutFlex>
+    <ShowDecision
+        store={store}
+        d="Pink Palette"
+        layout="column"
+        size="m"
+        value={["rgb", "hsl"]}
+    />
+    <ShowDecision
+        store={store}
+        d="Blue Palette"
+        layout="column"
+        size="m"
+        value={["rgb", "hsl"]}
+    />
+</LayoutFlex>
+
+## Content
+
+### Foregrounds
+
+<LayoutFlex>
+    <ShowDecision
+        store={store}
+        d="Content Foreground Scale"
+        layout="column"
+        size="m"
+        value={["rgb", "hsl"]}
+        viz="fg"
+    />
+</LayoutFlex>
+
+### Backgrounds
+
+<LayoutFlex>
+    <ShowDecision
+        store={store}
+        d="Content Background Scale"
+        layout="column"
+        size="l"
+        value={["rgb", "hsl"]}
+        viz="bg"
+        options={{ mode: "text", contrast: "#fff0f4" }}
+    />
+</LayoutFlex>
+
+## Interactions
+
+### Action Color
+
+### Heat Map Color Set
+
+The Heat Map Color Set is a structured 7-step gradient designed for data visualization. Spanning from warm to cool tones, it provides a clear and effective way to represent intensity variations in heat maps. This palette is not meant for typography, icons, backgrounds, or foregrounds.
+
+<ShowDecision
+    store={store}
+    d="Heat Map Color Set"
+    layout="column"
+    size="m"
+    value={["rgb", "hsl"]}
+/>
