@@ -8,10 +8,7 @@ import {
     LayoutStack,
     ShowDecision,
     ShowDecisionCard,
-} from "@noodlestan/designer-shows/astro";
-import { loader } from "../../decisions/loader";
-
-export const store = await loader();
+} from '@noodlestan/designer-shows/astro';
 
 ## Brand Color
 
@@ -22,18 +19,8 @@ Our brand colors define the visual identity of our branded elements, ensuring co
 The primary colors in our brand identity include our signature pink and blue. These colors are reserved for branded elements and should not be used for typography, backgrounds, or interactive elements.
 
 <LayoutFlex>
-    <ShowDecision
-        store={store}
-        d="Brand Pink"
-        size="l"
-        value={["rgb", "oklch"]}
-    />
-    <ShowDecision
-        store={store}
-        d="Brand Blue"
-        size="l"
-        value={["rgb", "oklch"]}
-    />
+    <ShowDecision d="Brand Pink" size="l" value={['rgb', 'oklch']} />
+    <ShowDecision d="Brand Blue" size="l" value={['rgb', 'oklch']} />
 </LayoutFlex>
 
 ### Supporting Colors
@@ -41,30 +28,15 @@ The primary colors in our brand identity include our signature pink and blue. Th
 In addition to our primary brand colors, we use black and white for contrast and balance within our identity system. These colors help define clear and recognizable compositions within our branding.
 
 <LayoutFlex>
-    <ShowDecision
-        store={store}
-        d="Brand Black"
-        size="m"
-        value={["rgb", "oklch"]}
-    />
-    <ShowDecision
-        store={store}
-        d="Brand White"
-        size="m"
-        value={["rgb", "oklch"]}
-    />
+    <ShowDecision d="Brand Black" size="m" value={['rgb', 'oklch']} />
+    <ShowDecision d="Brand White" size="m" value={['rgb', 'oklch']} />
 </LayoutFlex>
 
 ### Brand Color Set
 
 The full set of brand colors is designed to work together harmoniously in our logomark and other branded elements.
 
-<ShowDecision
-    store={store}
-    d="Brand Color Set"
-    size="l"
-    value={["rgb", "oklch"]}
-/>
+<ShowDecision d="Brand Color Set" size="l" value={['rgb', 'oklch']} />
 
 ## Brand Color Channels
 
@@ -74,14 +46,14 @@ Our brand colors are defined by a lightness, chroma, and hue channels in the [Ok
 <LayoutStack>
     **Brand Pink Channels**
 
-        <ShowDecision store={store} d="Brand Pink" value={['oklch', 'hsl', 'rgb']} size="m" />
+        <ShowDecision d="Brand Pink" value={['oklch', 'hsl', 'rgb']} size="m" />
 
 </LayoutStack>
 <LayoutStack>
 
     **Brand Blue Channels**
 
-        <ShowDecision store={store} d="Brand Blue" value={['oklch', 'hsl', 'rgb']} size="m" />
+        <ShowDecision d="Brand Blue" value={['oklch', 'hsl', 'rgb']} size="m" />
 
 </LayoutStack>
 

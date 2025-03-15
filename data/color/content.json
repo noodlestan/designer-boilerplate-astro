@@ -1,0 +1,95 @@
+[
+  {
+    "model": "oklab-hue-value/explicit",
+    "name": "Content Primary Hue",
+    "description": "Base hue for creating Foreground and Background tints",
+    "params": {
+      "value": 0.97
+    }
+  },
+  {
+    "model": "oklab-chroma-value/explicit",
+    "name": "Content Primary Chroma",
+    "description": "Base chroma for creating Foreground and Background tints",
+    "params": {
+      "value": 0.02
+    }
+  },
+  {
+    "model": "oklab-lightness-value/explicit",
+    "name": "Foreground Maximum Lightness",
+    "description": "Sets the maximum value of the foreground lightness scale",
+    "params": {
+      "value": 0.97
+    }
+  },
+  {
+    "model": "oklab-lightness-value/explicit",
+    "name": "Foreground Minimum Lightness",
+    "description": "Sets the minimum value of the foreground lightness scale",
+    "params": {
+      "value": 0.83
+    }
+  },
+  {
+    "model": "color-set/bounded",
+    "name": "Content Foreground Scale",
+    "description": "Colot set for foreground elements",
+    "params": {
+      "from": {
+        "l": { "$name": "Foreground Maximum Lightness" },
+        "c": { "$name": "Content Primary Chroma" },
+        "h": { "$name": "Content Primary Hue" }
+      },
+      "to": {
+        "l": { "$name": "Foreground Minimum Lightness" },
+        "c": { "$name": "Content Primary Chroma" },
+        "h": { "$name": "Content Primary Hue" }
+      },
+      "steps": 1
+    }
+  },
+  {
+    "model": "color-value/explicit",
+    "name": "Content Foreground Default Color",
+    "description": "Default color for foreground elements",
+    "params": {
+      "value": { "$name": "Content Foreground Scale", "index": 1 }
+    }
+  },
+  {
+    "model": "oklab-lightness-value/explicit",
+    "name": "Background Lightness Minimum",
+    "description": "Lightness scale for background elements",
+    "params": {
+      "value": 0.03
+    }
+  },
+  {
+    "model": "color-set/anchored",
+    "name": "Content Background Scale",
+    "description": "Sets the minimum value for of the background lightness scale",
+    "params": {
+      "anchor": {
+        "l": { "$name": "Background Lightness Minimum" },
+        "c": { "$name": "Content Primary Chroma" },
+        "h": { "$name": "Content Primary Hue" }
+      },
+      "before": {
+        "steps": 3,
+        "modifier": {
+          "space": "oklch",
+          "l": { "mode": "linear", "by": 0.12 }
+        }
+      }
+    }
+  },
+  {
+    "model": "color-value/explicit",
+    "name": "Content Background Default Color",
+    "description": "Default color for background surfaces",
+    "params": {
+      "value": { "$name": "Content Background Scale", "index": 1 }
+    }
+  }
+]

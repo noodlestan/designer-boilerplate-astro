@@ -1,30 +1,33 @@
 {
-    "name": "@noodlestan/designer-boilerplate-astro",
-    "version": "0.0.7",
-    "description": "Boilerplate for Designer Decisions documentation based on Astro/Starlight.",
-    "author": "Noodlestan Collective",
-    "license": "MIT",
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/noodlestan/designer-boilerplate-astro.git"
-    },
-    "type": "module",
-    "scripts": {
-        "dev": "astro dev",
-        "start": "astro dev",
-        "build:decisions": "node scripts/validate-decisions.js",
-        "build": "npm run build:decisions && astro build",
-        "preview": "astro preview",
-        "astro": "astro"
-    },
-    "dependencies": {
-        "@astrojs/starlight": "^0.31.1",
-        "@noodlestan/designer-decisions": "0.0.12",
-        "@noodlestan/designer-functions": "0.0.12",
-        "@noodlestan/designer-integration-astro": "0.0.12",
-        "@noodlestan/designer-schemas": "0.0.12",
-        "@noodlestan/designer-shows": "0.0.12",
-        "astro": "^5.2.5",
-        "sharp": "^0.32.5"
-    }
+  "name": "@noodlestan/designer-boilerplate-astro",
+  "version": "0.0.7",
+  "description": "Boilerplate for Designer Decisions documentation based on Astro/Starlight.",
+  "author": "Noodlestan Collective",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noodlestan/designer-boilerplate-astro.git"
+  },
+  "type": "module",
+  "engines": {
+    "node": "20.10.0"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build:decisions": "node scripts/validate-decisions.mjs",
+    "build": "npm run build:decisions && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/starlight": "^0.31.1",
+    "@noodlestan/designer-decisions": "0.0.14",
+    "@noodlestan/designer-functions": "0.0.14",
+    "@noodlestan/designer-integration-astro": "0.0.14",
+    "@noodlestan/designer-schemas": "0.0.14",
+    "@noodlestan/designer-shows": "0.0.14",
+    "astro": "^5.2.5",
+    "sharp": "^0.32.5"
+  }
 }

@@ -3,10 +3,7 @@ title: Color
 description: Color foundations of our visual language
 ---
 
-import { LayoutFlex, ShowDecision } from "@noodlestan/designer-shows/astro";
-import { loader } from "../../../decisions/loader";
-
-export const store = await loader();
+import { LayoutFlex, ShowDecision } from '@noodlestan/designer-shows/astro';
 
 ## Color Palettes
 
@@ -19,20 +16,8 @@ The band color Palettes provide a broad range of tints and shades of our brand c
 The shades follow a controlled progression, adjusting lightness and saturation channels in the [Oklch color space](https://oklch.com/#61.92,0.1717,358.75,100) to maintain balance across the palette.
 
 <LayoutFlex>
-    <ShowDecision
-        store={store}
-        d="Pink Palette"
-        layout="column"
-        size="m"
-        value={["rgb", "hsl"]}
-    />
-    <ShowDecision
-        store={store}
-        d="Blue Palette"
-        layout="column"
-        size="m"
-        value={["rgb", "hsl"]}
-    />
+    <ShowDecision d="Pink Palette" layout="column" size="m" value={['rgb', 'hsl']} />
+    <ShowDecision d="Blue Palette" layout="column" size="m" value={['rgb', 'hsl']} />
 </LayoutFlex>
 
 ## Content
@@ -41,11 +26,10 @@ The shades follow a controlled progression, adjusting lightness and saturation c
 
 <LayoutFlex>
     <ShowDecision
-        store={store}
         d="Content Foreground Scale"
         layout="column"
         size="m"
-        value={["rgb", "hsl"]}
+        value={['rgb', 'hsl']}
         viz="fg"
     />
 </LayoutFlex>
@@ -54,13 +38,12 @@ The shades follow a controlled progression, adjusting lightness and saturation c
 
 <LayoutFlex>
     <ShowDecision
-        store={store}
         d="Content Background Scale"
         layout="column"
         size="l"
-        value={["rgb", "hsl"]}
+        value={['rgb', 'hsl']}
         viz="bg"
-        options={{ mode: "text", contrast: "#fff0f4" }}
+        options={{ mode: 'text', contrast: '#fff0f4' }}
     />
 </LayoutFlex>
 
@@ -72,10 +55,4 @@ The shades follow a controlled progression, adjusting lightness and saturation c
 
 The Heat Map Color Set is a structured 7-step gradient designed for data visualization. Spanning from warm to cool tones, it provides a clear and effective way to represent intensity variations in heat maps. This palette is not meant for typography, icons, backgrounds, or foregrounds.
 
-<ShowDecision
-    store={store}
-    d="Heat Map Color Set"
-    layout="column"
-    size="m"
-    value={["rgb", "hsl"]}
-/>
+<ShowDecision d="Heat Map Color Set" layout="column" size="m" value={['rgb', 'hsl']} />

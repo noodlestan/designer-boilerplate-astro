@@ -1,0 +1,97 @@
+[
+  {
+    "model": "font-family-value/explicit",
+    "name": "Headings Font Family",
+    "params": {
+      "value": "Archivo, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
+    }
+  },
+  {
+    "model": "line-height-value/explicit",
+    "name": "Headings Line Height",
+    "params": {
+      "value": 1.2
+    }
+  },
+  {
+    "model": "letter-spacing-value/explicit",
+    "name": "Heading Tight Letter Spacing",
+    "params": {
+      "value": "-0.01rem"
+    }
+  },
+  {
+    "model": "text-style-value/explicit",
+    "name": "Heading Hero Style",
+    "params": {
+      "value": {
+        "fontFamily": { "$name": "Headings Font Family" },
+        "fontSize": "60px",
+        "fontWeight": 100,
+        "lineHeight": { "$name": "Headings Line Height" }
+      }
+    }
+  },
+  {
+    "model": "text-style-value/explicit",
+    "name": "Heading 1 Style",
+    "params": {
+      "value": {
+        "fontFamily": { "$name": "Headings Font Family" },
+        "fontSize": "42px",
+        "fontWeight": 100,
+        "lineHeight": { "$name": "Headings Line Height" },
+        "letterSpacing": { "$name": "Heading Tight Letter Spacing" }
+      }
+    }
+  },
+  {
+    "model": "text-style-value/explicit",
+    "name": "Heading 2 Style",
+    "params": {
+      "value": {
+        "fontFamily": { "$name": "Headings Font Family" },
+        "fontSize": "35px",
+        "fontWeight": 200,
+        "lineHeight": { "$name": "Headings Line Height" },
+        "letterSpacing": { "$name": "Heading Tight Letter Spacing" }
+      }
+    }
+  },
+  {
+    "model": "text-style-value/explicit",
+    "name": "Heading 3 Style",
+    "params": {
+      "value": {
+        "fontFamily": { "$name": "Headings Font Family" },
+        "fontSize": "29px",
+        "fontWeight": 300,
+        "lineHeight": { "$name": "Headings Line Height" }
+      }
+    }
+  },
+  {
+    "model": "text-style-value/explicit",
+    "name": "Heading 4 Style",
+    "params": {
+      "value": {
+        "fontFamily": { "$name": "Headings Font Family" },
+        "fontSize": "24px",
+        "fontWeight": 400,
+        "lineHeight": { "$name": "Headings Line Height" }
+      }
+    }
+  },
+  {
+    "model": "text-style-value/explicit",
+    "name": "Heading 5 Style",
+    "params": {
+      "value": {
+        "fontFamily": { "$name": "Headings Font Family" },
+        "fontSize": "20px",
+        "fontWeight": 500,
+        "lineHeight": { "$name": "Headings Line Height" }
+      }
+    }
+  }
+]

@@ -3,16 +3,13 @@ title: Space
 description: Space foundations of our visual language
 ---
 
-import { ShowDecisionCard } from "@noodlestan/designer-shows/astro";
-import { loader } from "../../../decisions/loader";
-
-export const store = await loader();
+import { ShowDecisionCard } from '@noodlestan/designer-shows/astro';
 
 ## Space Unit
 
 The space unit is the foundation of our spacing system, defining the base increment used across all scales. By keeping a consistent starting point, we ensure predictable and harmonious spacing throughout the design.
 
-<ShowDecisionCard store={store} d="Space Unit" size="m" viz="square" />
+<ShowDecisionCard d="Size Unit" size="m" viz="square" />
 
 ## Spacing scales
 
@@ -22,16 +19,16 @@ Our spacing scales define how elements grow and relate to one another, creating 
 
 This scale ensures that different UI elements, like buttons and inputs, remain aligned across their variants. By following a structured scale, we maintain consistency between similar components, ensuring a harmonious and balanced interface.
 
-<ShowDecisionCard store={store} d="Sizing Space Scale" size="m" viz="square" />
+<ShowDecisionCard d="Sizing Scale" size="m" viz="square" />
 
 ### Layout spacing
 
 Layout spacing ensures consistent gaps and paddings across the interface. It follows a geometric progression, doubling at each step, so that spacing remains flexible yet structured.
 
-<ShowDecisionCard store={store} d="Layout Space Scale" size="s" viz="bar-h" />
+<ShowDecisionCard d="Layout Gap Scale" size="s" viz="bar-h" />
 
 ### Vertical spacing
 
 Vertical rhythm is essential for clear and structured layouts. Our layout rhythm scale builds on the horizontal spacing, maintaining proportionality and ensuring that vertical gaps align with the overall spacing system.
 
-<ShowDecisionCard store={store} d="Layout Rhythm Scale" size="m" viz="bar-v" />
+<ShowDecisionCard d="Layout Rhythm Scale" size="m" viz="bar-v" />

@@ -1,0 +1,30 @@
+[
+  {
+    "model": "typeface-value/explicit",
+    "name": "Headings Typeface",
+    "params": {
+      "value": {
+        "fontName": "Source Sans 3",
+        "capabilities": ["variable"],
+        "ranges": [
+          { "tag": "wght", "min": 200, "max": 900 },
+          { "tag": "ital", "min": 0, "max": 1 }
+        ]
+      }
+    }
+  },
+  {
+    "model": "typeface-value/explicit",
+    "name": "Text Typeface",
+    "params": {
+      "value": {
+        "fontName": "Merriweather",
+        "capabilities": ["variable"],
+        "ranges": [
+          { "tag": "wght", "min": 300, "max": 900 },
+          { "tag": "ital", "min": 0, "max": 1 }
+        ]
+      }
+    }
+  }
+]

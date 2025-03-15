@@ -3,4 +3,79 @@ title: Typography
 description: Typographic foundations of our visual language
 ---
 
-🚧
+import { LayoutFlex, ShowDecision, ShowDecisionCard } from '@noodlestan/designer-shows/astro';
+
+## Typeface
+
+### Headings: Source Sans Pro
+
+**Source Sans Pro**, a versatile and modern sans-serif typeface designed by Paul D. Hunt, provides a clean, contemporary appearance that works well for headings, allowing them to stand out without feeling overly decorative. Its bold weight and high legibility ensure that headings are clear and prominent, helping to establish a strong visual hierarchy.
+
+<ShowDecisionCard d="Headings Typeface" />
+
+### Text: Merriweather
+
+**Merriweather**, a serif typeface known for its readability, especially at smaller sizes, was designed specifically for digital screens, making it perfect for extended reading. Its slightly condensed form and robust serifs give it a traditional feel, but its modern proportions ensure it remains legible and approachable. This combination of elegance and functionality allows for a seamless reading experience in content-heavy areas such as paragraphs, lists, and captions.
+
+<ShowDecisionCard d="Text Typeface" />
+
+## Font Family
+
+This ensures that if the primary typefaces are unavailable, similar serif and sans-serif fonts are used. The fallback stack includes:
+
+<ShowDecision d="Headings Font Family" />
+
+<ShowDecision d="Text Font Family" />
+
+## Heading Styles
+
+The **Heading 1 Style** utilizes **Merriweather** at a larger size and bold weight to create a clear and commanding presence for primary page titles and section headers.
+
+<ShowDecision d="Heading Hero Style" />
+
+<ShowDecision d="Heading 1 Style" />
+
+<ShowDecision d="Heading 2 Style" />
+
+<ShowDecision d="Heading 3 Style" />
+
+<ShowDecision d="Heading 4 Style" />
+
+<ShowDecision d="Heading 5 Style" />
+
+### Letter Spacing
+
+The **Heading Tight Letter Spacing** helps to create a compact and bold appearance for large headings. It is used on **Heading Hero Style** and **Heading 1 Style**.
+
+<ShowDecision d="Heading Tight Letter Spacing" />
+
+## Text Styles
+
+The **Text Default Size** is set to provide optimal readability for body text, ensuring that users can comfortably read text in a wide range of devices and resolutions.
+
+<ShowDecision d="Text Default Size" />
+
+### Text Weights
+
+The **Text Default Weight** for body text is set to a medium weight. The **Text Bold Weight** is reserved for emphasis, such as for bolded text or headers within body content, creating clear distinctions for the reader.
+
+<ShowDecision d="Text Default Weight" />
+
+<ShowDecision d="Text Bold Weight" />
+
+### Line Height
+
+The **Text Default Height** ensures proper line spacing for body text, contributing to readability without feeling too cramped or too spaced out.
+
+The **Text Compact Height** is used for more compact text sections where space is at a premium, offering a slightly reduced line height for more condensed text blocks.
+
+<LayoutFlex gap="l" wrap={false}>
+    <ShowDecision d="Text Default Height" />
+    <ShowDecision d="Text Compact Height" />
+</LayoutFlex>
+
+### Letter Spacing
+
+The **Text Loose Letter Spacing** increases the space between characters, offering a more airy and open feel for specific design elements.
+
+<ShowDecision d="Text Loose Letter Spacing" />

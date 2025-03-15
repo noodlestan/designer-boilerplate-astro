@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300..900;1,300..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
 /**
  * Wide Layout (Startligh layout overrides)
  */
@@ -9,10 +11,10 @@
 }
 
 /* constrain markdown content width (but not for dd-components) */
-.sl-markdown-content > *:not([class^="dd-"]) {
+.sl-markdown-content > *:not([class^='dd-']) {
     max-width: 42rem;
 }
 /* do not constrain makdown content width on homepage */
-.hero + .sl-markdown-content > *:not([class^="dd-"]) {
+.hero + .sl-markdown-content > *:not([class^='dd-']) {
     max-width: none;
 }
