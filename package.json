@@ -21,7 +21,7 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/starlight": "^0.31.1",
+    "@astrojs/starlight": "^0.43.1",
     "@noodlestan/designer-decisions": "0.0.14",
     "@noodlestan/designer-functions": "0.0.14",
     "@noodlestan/designer-integration-astro": "0.0.14",
